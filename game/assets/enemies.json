@@ -1,0 +1,14 @@
+{
+  "goblin": {
+    "health": 60,
+    "start_pos": [260, 50]
+  },
+  "ogre": {
+    "health": 140,
+    "start_pos": [280, 50]
+  },
+  "dragon": {
+    "health": 120,
+    "start_pos": [300, 50]
+  }
+}
