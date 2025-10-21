@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Boss-Rush Medieval</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Boss-Rush Medieval</h1>
+
+      <section id="menu">
+        <h2>Perfiles Knight</h2>
+        <form id="create-form">
+          <input id="name" placeholder="Nombre (3-16 letras)" />
+          <button type="submit">Crear</button>
+        </form>
+        <div id="profile-status"></div>
+        <div class="boss-select">
+          <select id="boss">
+            <option value="goblin">Goblin</option>
+            <option value="ogre">Ogro</option>
+            <option value="dragon">Dragón</option>
+          </select>
+          <button id="start">Iniciar Pelea</button>
+        </div>
+      </section>
+
+      <section id="game">
+        <canvas id="game-canvas" width="480" height="200"></canvas>
+        <div class="controls">
+          <button data-action="move_left">Izq</button>
+          <button data-action="move_right">Der</button>
+          <button data-action="attack">Atacar</button>
+        </div>
+        <div id="hud"></div>
+      </section>
+
+      <section id="results">
+        <h2>Resultados</h2>
+        <div id="result-text"></div>
+      </section>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+  </body>
+  </html>
+
